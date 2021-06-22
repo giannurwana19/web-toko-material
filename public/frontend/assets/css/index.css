@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* customize */
+.bg-gray {
+  background-color: #5f939a;
+}
+
+.bg-red {
+  background-color: #ef4444;
+}
+
+.bg-green {
+  background-color: #10b981;
+}
+
+.bg-blue {
+  background-color: #3b82f6;
+}
+
+.text-blue {
+  color: #3b82f6;
+}
+
+.text-green {
+  color: #10b981;
+}
+
+.text-red {
+  color: #ef4444;
+}
+
+.btn {
+  border-radius: 15px;
+}
+
+/* navbar */
+.navbar {
+  letter-spacing: 0.15rem;
+}
+
+.nav-link:hover {
+  background-color: #f9fafb;
+  border-radius: 5px;
+}
+
+/* slider */
+
+#slider {
+  margin-top: 72px;
+}
+
+.jumbotron {
+  margin-bottom: -32px;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+/* about */
+/* .desc-about {
+  align-self: center;
+} */
+
+/* feature */
+.divider {
+  border-bottom: 5px solid black;
+  width: 4rem;
+}
+
+/* product */
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.btn-product,
+.list-group-item,
+.card-text {
+  font-size: 0.9rem;
+}
+
+/* google maps */
+.map {
+  width: 100%;
+  height: 60vh;
+}
+
+/* footer */
+.main-footer {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+/* media query */
+/* lg */
+@media (max-width: 992px) {
+}
+
+/* md */
+@media (max-width: 768px) {
+}
+
+/* sm */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
