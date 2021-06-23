@@ -50,14 +50,14 @@
 
     {{-- Nav Item - Category --}}
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="{{ route('categories.index') }}">
             <i class="fas fa-list"></i>
             <span>Kategori</span></a>
     </li>
 
     <!-- Nav Item - Brand -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="{{ route('brands.index') }}">
             <i class="far fa-bookmark"></i>
             <span>Merk</span></a>
     </li>

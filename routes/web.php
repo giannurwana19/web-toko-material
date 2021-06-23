@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BrandController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,8 +20,14 @@ Route::get('/', function () {
     return view('layouts.frontend.app');
 });
 
-Route::prefix('admina')->group(function () {
+Route::prefix('admin')->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
+
+    // categories
+    Route::resource('categories', CategoryController::class)->scoped(['category' => 'slug'])->except('show');
+
+    // brand
+    Route::resource('brands', BrandController::class);
 });
 
 Route::fallback(function () {
