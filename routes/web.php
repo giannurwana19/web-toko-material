@@ -27,7 +27,7 @@ Route::prefix('admin')->group(function () {
     Route::resource('categories', CategoryController::class)->scoped(['category' => 'slug'])->except('show');
 
     // brand
-    Route::resource('brands', BrandController::class);
+    Route::resource('brands', BrandController::class)->scoped(['brand' => 'slug'])->except('show');
 });
 
 Route::fallback(function () {
