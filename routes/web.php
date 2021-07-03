@@ -3,6 +3,7 @@
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,9 +26,10 @@ Route::prefix('admin')->group(function () {
 
     // categories
     Route::resource('categories', CategoryController::class)->scoped(['category' => 'slug'])->except('show');
-
-    // brand
+    // brands
     Route::resource('brands', BrandController::class)->scoped(['brand' => 'slug'])->except('show');
+    // products
+    Route::resource('products', ProductController::class)->scoped(['product' => 'slug']);
 });
 
 Route::fallback(function () {

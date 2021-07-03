@@ -64,7 +64,7 @@
 
     {{-- Nav Item - Product --}}
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="{{ route('products.index') }}">
             <i class="fas fa-box-open"></i>
             <span>Produk</span></a>
     </li>
