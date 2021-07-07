@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ProductRequest;
+use App\Models\Brand;
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
@@ -26,7 +30,11 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        $this->data['categories'] = Category::orderBy('name', 'asc')->get();
+        $this->data['brands'] = Brand::orderBy('name', 'asc')->get();
+        $this->data['product'] = new Product();
+
+        return view('products.create', $this->data);
     }
 
     /**
@@ -35,9 +43,22 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
-        //
+        $data = $request->validated();
+        $data['slug'] = Str::slug($request->name);
+
+        $image = $request->file('image');
+        $imageName = $data['slug'] . '-' . time() . '.' . $image->getClientOriginalExtension();
+
+        $data['image'] = $imageName;
+
+        // store image
+        $image->storeAs('images', $imageName);
+
+        Product::create($data);
+
+        return redirect()->route('products.index')->with('success', 'Produk berhasil ditambahkan!');
     }
 
     /**
@@ -59,7 +80,11 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        $this->data['product'] = $product;
+        $this->data['categories'] = Category::orderBy('name', 'asc')->get();
+        $this->data['brands'] = Brand::orderBy('name', 'asc')->get();
+
+        return view('products.edit', $this->data);
     }
 
     /**
@@ -69,9 +94,23 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(ProductRequest $request, Product $product)
     {
-        //
+        $data = $request->validated();
+
+        $image = $request->file('image');
+
+        if ($image) {
+            $imageName = $data['slug'] . '-' . time() . '.' . $image->getClientOriginalExtension();
+            $data['image'] = $imageName;
+
+            // store image
+            $image->storeAs('images', $imageName);
+        }
+
+        $product->update($data);
+
+        return redirect()->route('products.index')->with('success', 'Produk berhasil diubah!');
     }
 
     /**
@@ -82,6 +121,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+
+        return redirect()->route('products.index')->with('success', 'Produk berhasil dihapus!');
     }
 }

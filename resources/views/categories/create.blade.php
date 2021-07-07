@@ -20,5 +20,8 @@
             </div>
         </div>
     </div>
+    <div class="col-lg-4">
+        <img src="" id="viewImage" alt="">
+    </div>
 </div>
 @endsection

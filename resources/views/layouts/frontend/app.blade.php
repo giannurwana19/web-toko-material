@@ -211,127 +211,174 @@
                     <hr class="divider">
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <div class="card card-product">
-                        <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Batu Bata Merah</h5>
-                            <p class="card-text">Rp. 120.000 / pcs
-                            </p>
-                            <div>
-                                <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
-                                    Produk</a>
-                            </div>
+                <div class="col-lg-3">
+                    <!-- category -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <h4>Kategori</h4>
+                            <ul class="list-group list-group-flush">
+                                <li
+                                    class="list-group-item list-group-item-action active d-flex justify-content-between">
+                                    An item <span>8</span></li>
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between">A
+                                    second item <span>8</span></li>
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between">A
+                                    third item <span>8</span></li>
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between">A
+                                    fourth item <span>8</span></li>
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between">And a
+                                    fifth one <span>8</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <div class="card card-product">
-                        <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Batu Bata Merah</h5>
-                            <p class="card-text">Rp. 120.000 / pcs
-                            </p>
-                            <div>
-                                <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
-                                    Produk</a>
+                <div class="col-lg-9">
+                    <!-- card product -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+
+                            <div class="card card-product">
+                                <div class="card-body">
+                                    <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg"
+                                        class="img-fluid mb-3" alt="...">
+                                    <h5 class="card-title">Batu Bata Merah</h5>
+                                    <div class="card-text">Rp. 120.000</div>
+                                    <span class="badge badge-primary my-3">Tersedia</span>
+                                    <div>
+                                        <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
+                                            Produk</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+
+                            <div class="card card-product">
+                                <div class="card-body">
+                                    <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg"
+                                        class="img-fluid mb-3" alt="...">
+                                    <h5 class="card-title">Batu Bata Merah</h5>
+                                    <div class="card-text">Rp. 120.000</div>
+                                    <span class="badge badge-danger my-3">Kosong!</span>
+                                    <div>
+                                        <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
+                                            Produk</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+
+                            <div class="card card-product">
+                                <div class="card-body">
+                                    <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg"
+                                        class="img-fluid mb-3" alt="...">
+                                    <h5 class="card-title">Batu Bata Merah</h5>
+                                    <div class="card-text">Rp. 120.000</div>
+                                    <span class="badge badge-primary my-3">Tersedia</span>
+                                    <div>
+                                        <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
+                                            Produk</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+
+                            <div class="card card-product">
+                                <div class="card-body">
+                                    <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg"
+                                        class="img-fluid mb-3" alt="...">
+                                    <h5 class="card-title">Batu Bata Merah</h5>
+                                    <div class="card-text">Rp. 120.000</div>
+                                    <span class="badge badge-danger my-3">kosong!</span>
+                                    <div>
+                                        <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
+                                            Produk</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+
+                            <div class="card card-product">
+                                <div class="card-body">
+                                    <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg"
+                                        class="img-fluid mb-3" alt="...">
+                                    <h5 class="card-title">Batu Bata Merah</h5>
+                                    <div class="card-text">Rp. 120.000</div>
+                                    <span class="badge badge-primary my-3">Tersedia</span>
+                                    <div>
+                                        <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
+                                            Produk</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+
+                            <div class="card card-product">
+                                <div class="card-body">
+                                    <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg"
+                                        class="img-fluid mb-3" alt="...">
+                                    <h5 class="card-title">Batu Bata Merah</h5>
+                                    <div class="card-text">Rp. 120.000</div>
+                                    <span class="badge badge-primary my-3">Tersedia</span>
+                                    <div>
+                                        <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
+                                            Produk</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+
+                            <div class="card card-product">
+                                <div class="card-body">
+                                    <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg"
+                                        class="img-fluid mb-3" alt="...">
+                                    <h5 class="card-title">Batu Bata Merah</h5>
+                                    <div class="card-text">Rp. 120.000</div>
+                                    <span class="badge badge-primary my-3">Tersedia</span>
+                                    <div>
+                                        <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
+                                            Produk</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+
+                            <div class="card card-product">
+                                <div class="card-body">
+                                    <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg"
+                                        class="img-fluid mb-3" alt="...">
+                                    <h5 class="card-title">Batu Bata Merah</h5>
+                                    <div class="card-text">Rp. 120.000</div>
+                                    <span class="badge badge-primary my-3">Tersedia</span>
+                                    <div>
+                                        <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
+                                            Produk</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
+                    <nav aria-label="Page navigation example" class="mt-3">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <div class="card card-product">
-                        <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Batu Bata Merah</h5>
-                            <p class="card-text">Rp. 120.000 / pcs
-                            </p>
-                            <div>
-                                <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
-                                    Produk</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <div class="card card-product">
-                        <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Batu Bata Merah</h5>
-                            <p class="card-text">Rp. 120.000 / pcs
-                            </p>
-                            <div>
-                                <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
-                                    Produk</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <div class="card card-product">
-                        <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Batu Bata Merah</h5>
-                            <p class="card-text">Rp. 120.000 / pcs
-                            </p>
-                            <div>
-                                <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
-                                    Produk</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <div class="card card-product">
-                        <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Batu Bata Merah</h5>
-                            <p class="card-text">Rp. 120.000 / pcs
-                            </p>
-                            <div>
-                                <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
-                                    Produk</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <div class="card card-product">
-                        <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Batu Bata Merah</h5>
-                            <p class="card-text">Rp. 120.000 / pcs
-                            </p>
-                            <div>
-                                <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
-                                    Produk</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                    <div class="card card-product">
-                        <img src="{{ asset('frontend') }}/assets/img/product/batu-bata.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Batu Bata Merah</h5>
-                            <p class="card-text">Rp. 120.000 / pcs
-                            </p>
-                            <div>
-                                <a href="table.html" class="btn btn-outline-success btn-product btn-block">Lihat
-                                    Produk</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -406,7 +453,8 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <img src="assets/img/about/gambar-about.jpg" class="img-fluid mb-4 rounded" alt="">
+                        <img src="{{ asset('frontend') }}/assets/img/about/gambar-about.jpg"
+                            class="img-fluid mb-4 rounded" alt="">
                     </div>
                 </div>
             </div>

@@ -16,6 +16,26 @@ class Product extends Model
      */
     protected $guarded = ['id'];
 
+    /**
+     * brand
+     *
+     * @return void
+     */
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class);
+    }
+
+    /**
+     * category
+     *
+     * @return void
+     */
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
     public function getPriceColAttribute()
     {
         return number_format($this->price, 0, ',', '.');
