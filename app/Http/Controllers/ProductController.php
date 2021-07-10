@@ -7,6 +7,7 @@ use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class ProductController extends Controller
@@ -98,9 +99,13 @@ class ProductController extends Controller
     {
         $data = $request->validated();
 
+        $data['slug'] = $product->slug;
+
         $image = $request->file('image');
 
         if ($image) {
+            Storage::delete('images/' . $product->image);
+
             $imageName = $data['slug'] . '-' . time() . '.' . $image->getClientOriginalExtension();
             $data['image'] = $imageName;
 
@@ -121,6 +126,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+        Storage::delete('images/' . $product->image);
+
         $product->delete();
 
         return redirect()->route('products.index')->with('success', 'Produk berhasil dihapus!');

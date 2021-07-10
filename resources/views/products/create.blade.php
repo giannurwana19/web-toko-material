@@ -36,7 +36,6 @@
 
     function viewImage(e) {
         imageElement.src = URL.createObjectURL(e.target.files[0]);
-        console.log(e.target.files[0]);
     }
 </script>
 @endpush

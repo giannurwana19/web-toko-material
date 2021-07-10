@@ -28,13 +28,13 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="#">
             <i class="fas fa-store"></i>
             <span>Informai Toko</span></a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="{{ route('sliders.index') }}">
             <i class="far fa-images"></i>
             <span>Slider</span></a>
     </li>

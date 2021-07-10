@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddSlugToProudctsTable extends Migration
+class CreateSlidersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class AddSlugToProudctsTable extends Migration
      */
     public function up()
     {
-        Schema::table('proudcts', function (Blueprint $table) {
-            $table->string('slug');
+        Schema::create('sliders', function (Blueprint $table) {
+            $table->id();
+            $table->string('image');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +27,6 @@ class AddSlugToProudctsTable extends Migration
      */
     public function down()
     {
-        Schema::table('proudcts', function (Blueprint $table) {
-            $table->dropColumn
-        });
+        Schema::dropIfExists('sliders');
     }
 }
