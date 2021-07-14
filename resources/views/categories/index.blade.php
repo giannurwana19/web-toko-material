@@ -12,7 +12,7 @@
                 </h6>
             </div>
             <div class="card-body">
-                @include('layouts.admin.includes.alert')
+c
                 <table class="table table-sm table-bordered table-hover">
                     <thead class="text-center">
                         <tr>

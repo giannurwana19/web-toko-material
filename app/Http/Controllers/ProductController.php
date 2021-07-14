@@ -106,11 +106,9 @@ class ProductController extends Controller
         if ($image) {
             Storage::delete('images/' . $product->image);
 
-            $imageName = $data['slug'] . '-' . time() . '.' . $image->getClientOriginalExtension();
-            $data['image'] = $imageName;
-
+            $data['image'] = $data['slug'] . '-' . time() . '.' . $image->getClientOriginalExtension();
             // store image
-            $image->storeAs('images', $imageName);
+            $image->storeAs('images', $data['image']);
         }
 
         $product->update($data);

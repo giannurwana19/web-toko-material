@@ -6,6 +6,7 @@
     <small class="text-danger">{{ $message }}</small>
     @enderror
 </div>
+
 <div class="form-group">
     <label for="image">Gambar</label>
     <input type="file" name="image" class="form-control @error('image') is-invalid @enderror" id="image">
@@ -13,6 +14,7 @@
     <small class="text-danger">{{ $message }}</small>
     @enderror
 </div>
+
 <div class="form-group">
     <label for="description">Deskripsi</label>
     <textarea name="description" id="description" class="form-control @error('description') is-invalid @enderror"
@@ -21,6 +23,7 @@
     <small class="text-danger">{{ $message }}</small>
     @enderror
 </div>
+
 <div class="form-row">
     <div class="form-group col-md-6">
         <label for="category_id">Kategori</label>
@@ -35,6 +38,7 @@
         <small class="text-danger">{{ $message }}</small>
         @enderror
     </div>
+
     <div class="form-group col-md-6">
         <label for="brand_id">Merk</label>
         <select name="brand_id" id="brand_id" class="custom-select @error('brand_id') is-invalid @enderror">
@@ -49,6 +53,7 @@
         @enderror
     </div>
 </div>
+
 <div class="form-row">
     <div class="form-group col-md-6">
         <label for="price">Harga</label>

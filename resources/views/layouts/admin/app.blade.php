@@ -104,12 +104,10 @@
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('admin') }}/js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="{{ asset('admin') }}/vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="{{ asset('admin') }}/js/demo/chart-area-demo.js"></script>
-    <script src="{{ asset('admin') }}/js/demo/chart-pie-demo.js"></script>
+    <!-- turbolinks cdn -->
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.js"
+        integrity="sha512-P3/SDm/poyPMRBbZ4chns8St8nky2t8aeG09fRjunEaKMNEDKjK3BuAstmLKqM7f6L1j0JBYcIRL4h2G6K6Lew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
 
     {{-- push js --}}
     @stack('js')
