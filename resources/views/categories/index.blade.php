@@ -12,7 +12,6 @@
                 </h6>
             </div>
             <div class="card-body">
-c
                 <table class="table table-sm table-bordered table-hover">
                     <thead class="text-center">
                         <tr>
